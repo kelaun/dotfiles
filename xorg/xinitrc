@@ -1,0 +1,3 @@
+wal -R
+xrdb -merge ~/.Xresources
+exec spectrwm
