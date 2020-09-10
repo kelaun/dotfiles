@@ -1,10 +1,9 @@
 # GRUB boot loader configuration
 
-GRUB_SAVEDEFAULT=true
 GRUB_DEFAULT=saved
 GRUB_TIMEOUT=1
-GRUB_DISTRIBUTOR="EndeavourOS"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 nowatchdog"
+GRUB_DISTRIBUTOR="Arch"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
@@ -45,7 +44,7 @@ GRUB_DISABLE_RECOVERY=true
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
 #GRUB_BACKGROUND="/path/to/wallpaper"
-GRUB_THEME=/boot/grub/themes/EndeavourOS/theme.txt
+#GRUB_THEME="/path/to/gfxtheme"
 
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
@@ -53,4 +52,3 @@ GRUB_THEME=/boot/grub/themes/EndeavourOS/theme.txt
 # Uncomment to make GRUB remember the last selection. This requires
 # setting 'GRUB_DEFAULT=saved' above.
 #GRUB_SAVEDEFAULT="true"
-GRUB_DISABLE_SUBMENU=y
