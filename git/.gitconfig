@@ -1,0 +1,9 @@
+[user]
+	email = kevin@kelaun.be
+	name = Kelaun
+
+[color "status"]
+	branch = magenta
+	untracked = cyan
+	unmerged = yellow
+	header = bold black
