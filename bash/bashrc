@@ -52,5 +52,6 @@ ufetch
 if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
 	GIT_PROMPT_ONLY_IN_REPO=1
 	GIT_PROMPT_THEME=Default_Arch
+	GIT_PROMPT_END_USER=" \n\W > "
 	source /usr/lib/bash-git-prompt/gitprompt.sh
 fi
