@@ -30,7 +30,7 @@ alias remove='yay -Rns'
 alias wowremove='instawow remove'
 alias search='yay'
 alias wowsearch='instawow search'
-alias clean='sudo paccache -rk1 && sudo yay -Sc && sudo yay -Rns $(pacman -Qtdq)'
+alias clean='sudo paccache -rk1 && yay -Sc && yay -Rns $(pacman -Qtdq)'
 alias ikey='gpg --keyserver keyserver.ubuntu.com --recv'
 
 ## Terminal prompt
