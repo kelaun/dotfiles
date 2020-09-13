@@ -55,3 +55,7 @@ if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
 	GIT_PROMPT_END_USER=" \n\W > "
 	source /usr/lib/bash-git-prompt/gitprompt.sh
 fi
+
+## Use bash completion
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+	. /usr/share/bash-completion/bash_completion
