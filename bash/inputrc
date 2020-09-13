@@ -1,0 +1,13 @@
+## Forward through the completion choices
+TAB: menu-complete
+## Backward through the completion choices
+"\e[Z": menu-complete-backward
+## First press will show completion choices, second will cycle
+set menu-complete-display-prefix on
+set show-all-if-ambiguous on
+
+## Enable colors when completing filenames and directories
+set colored-stats on
+
+## Ignore case when completing
+set completion-ignore-case
