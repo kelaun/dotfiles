@@ -22,7 +22,7 @@ alias ls='ls --color=auto'
 alias wowls='instawow list'
 alias update='yay -Syy'
 alias wowupdate='instawow update'
-alias upgrade='yay -Syu'
+alias upgrade='yay -Syu; instawow update'
 alias wowupgrade='instawow update'
 alias install='yay -S'
 alias wowinstall='instawow install'
@@ -30,7 +30,7 @@ alias remove='yay -Rns'
 alias wowremove='instawow remove'
 alias search='yay'
 alias wowsearch='instawow search'
-alias clean='exec /home/kelaun/Git/packsize/packsize'
+alias clean='sudo paccache -rk1 && yay -Sc && yay -Rns $(pacman -Qtdq)'
 alias ikey='gpg --keyserver keyserver.ubuntu.com --recv'
 
 ## Terminal prompt
@@ -43,3 +43,15 @@ export MAKEFLAGS="-j$(nproc)"
 
 ## Colorscheme
 (cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
+
+## Autorun
+ufetch
+
+## Git prompt
+if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
+	GIT_PROMPT_ONLY_IN_REPO=1
+	GIT_PROMPT_THEME=Default_Arch
+	GIT_PROMPT_END_USER=" \n\W > "
+	source /usr/lib/bash-git-prompt/gitprompt.sh
+fi
