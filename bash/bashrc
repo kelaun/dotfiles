@@ -1,54 +1,93 @@
-# .bashrc
+###########
+# .bashrc #
+###########
 
-# If not running interactively, don't do anything
+#`````````````````````````````````````````````````#
+# If not running interactively, don't do anything #
+#`````````````````````````````````````````````````#
 [[ $- != *i* ]] && return
 
-# Source global definitions
+#```````````````````````````#
+# Source global definitions #
+#```````````````````````````#
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# User specific environment
+#```````````````````````````#
+# User specific environment #
+#```````````````````````````#
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
-# User specific aliases and functions
+#`````````````````````````````````````#
+# User specific aliases and functions #
+#`````````````````````````````````````#
 
-## Aliases
-alias ls='ls --color=auto'
+#~~~~~~~~~#
+# Aliases #
+#~~~~~~~~~#
+
+# ls aliases
+alias ls='ls --color --classify --human-readable'
+alias ll='ls -l'
+alias ll.='ls -la'
+alias lls='ls -la --sort-size'
+alias llt='ls -la --sort-time'
+
+# cd aliases
+alias -- -='cd -'
+alias ..='cd ..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
+alias ..4='cd ../../../..'
+alias ..5='cd ../../../../..'
+
+# instawow aliases
 alias wowls='instawow list'
-alias update='yay -Syy'
-alias wowupdate='instawow update'
-alias upgrade='yay -Syu; instawow update'
-alias wowupgrade='instawow update'
-alias install='yay -S'
-alias wowinstall='instawow install'
-alias remove='yay -Rns'
-alias wowremove='instawow remove'
-alias search='yay'
-alias wowsearch='instawow search'
-alias clean='sudo paccache -rk1 && yay -Sc && yay -Rns $(pacman -Qtdq)'
-alias ikey='gpg --keyserver keyserver.ubuntu.com --recv'
+alias wowy='instawow update'
+alias wowu='instawow update'
+alias wows='instawow install'
+alias wowR='instawow remove'
+alias wowS='instawow search'
 
-## Terminal prompt
+# yay aliases
+alias update='yay -Syy'
+alias upgrade='yay -Syu; instawow update'
+alias install='yay -S'
+alias remove='yay -Rns'
+alias search='yay'
+alias clean='sudo paccache -rk1 && yay -Sc && yay -Rns $(pacman -Qtdq)'
+
+# Utility aliases
+alias ikey='gpg --keyserver keyserver.ubuntu.com --recv'
+alias cp='/bin/cp -i'
+alias mv='/bin/mv -i'
+alias rm='/bin/rm -i'
+
+#~~~~~~~~~~~~~~~~#
+# Configurations #
+#~~~~~~~~~~~~~~~~#
+
+# Terminal prompt
 PS1='\W > '
 
-## Defaults
+# Defaults
 export EDITOR='vim'
 export VISUAL='vim'
 export MAKEFLAGS="-j$(nproc)"
 
-## Colorscheme
+# Colorscheme
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
 
-## Autorun
+# Autorun
 ufetch
 
-## Git prompt
+# Git prompt
 if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
 	GIT_PROMPT_ONLY_IN_REPO=1
 	GIT_PROMPT_THEME=Default_Arch
@@ -56,6 +95,12 @@ if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
 	source /usr/lib/bash-git-prompt/gitprompt.sh
 fi
 
-## Use bash completion
+# Bash completion
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
 	. /usr/share/bash-completion/bash_completion
+
+# cd when typing directory name
+shopt -s autocd
+
+# Spellcheck for directory names
+shopt -s cdspell
