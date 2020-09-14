@@ -3,22 +3,22 @@
 #
 
 ## define the font for dmenu to be used
-DMENU_FN="IosevkaTerm-24"
+DMENU_FN="IosevkaTerm-11"
 
 ## background colour for unselected menu-items
-DMENU_NB="#111111"
+DMENU_NB="#0c0c0c"
 
 ## textcolour for unselected menu-items
-DMENU_NF="#b3baba"
+DMENU_NF="#ebebeb"
 
 ## background colour for selected menu-items
-DMENU_SB="#111111"
+DMENU_SB="#0c0c0c"
 
 ## textcolour for selected menu-items
-DMENU_SF="#3d6446"
+DMENU_SF="#666666"
 
 ## command for the terminal application to be used:
 TERMINAL_CMD="terminal -e"
 
 ## export our variables
-DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
+DMENU_OPTIONS="-i -fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
