@@ -77,7 +77,7 @@ export MAKEFLAGS="-j$(nproc)"
 source ~/.cache/wal/colors-tty.sh
 
 # Autorun
-ufetch
+kfetch
 
 # Git prompt
 if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
