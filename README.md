@@ -103,6 +103,7 @@
 			<ul>
 				<li>Uses Iosevka Term font.</li>
 				<li>Colors are the same as in <code>.Xresources</code>.</li>
+				<li>Works case insensitive.</li>
 			</ul>
 		</p>
 	<h3>Dunst</h3>
