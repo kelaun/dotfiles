@@ -153,6 +153,34 @@
 			</ul>
 		</p>
 	<h3>Spectrwm</h3>
+		<p>
+			<ul>
+				<li>Enables 10 workspaces.</li>
+				<li>Focus follows mouse.</li>
+				<li>Colors are the same as in <code>.Xresources</code>.</li>
+				<li>Font is Iosevka Term.</li>
+				<li>Bar shows the following:</li>
+					<ul>
+						<li>Workspace indicator</li>
+						<li>Layout indicator</li>
+						<li>Window title</li>
+						<li>Custom stuff from <code>baraction.sh</code></li>
+					</ul>
+				<li>Start the following automatically:</li>
+					<ul>
+						<li>Runs the <code>autostart.sh</code> script</li>
+						<li>Firefox with <a href="https://mail.tutanota.com">Tutanota</a> and <a href="https://forum.endeavouros.com">EndeavourOS forum</a></li>
+						<li>Telegram</li>
+					</ul>
+				<li>Modkey set to the super (windows) key.</li>
+				<li><code>xlock</code> as screen locker.</li>
+				<li><code>urxvt</code> as terminal emulator.</li>
+				<li><code>dmenu</code> tweaked  with recency as application runner.</li>
+				<li><code>dmenu</code> script for access to lastpass using <code>lpass</code>.</li>
+				<li>Custom exit script to choose between shutdown, reboot, and suspend.</li>
+				<li>Custom screenshot script using <code>scrot</code>.</li>
+			</ul>
+		</p>
 	<h3>Vim</h3>
 	<h3>Xorg</h3>
 </div>
