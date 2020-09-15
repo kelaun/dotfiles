@@ -134,10 +134,6 @@ width: 50% !important;
   min-height: var(--mff-tab-height) !important;
 }
 
-.tabbrowser-tab[soundplaying="true"] {
-  background-color: var(--mff-tab-soundplaying-bg) !important;
-}
-
 #tabs-newtab-button {
   list-style-image: url("add.svg") !important;
   opacity: 0.7;
@@ -364,6 +360,7 @@ toolbarseparator {
 @namespace url("https://www.mozila.org/keymaster/gatekeeper/there.is.only.xul");
 .tab-line {display : none !important;}
 .tab-content {border-bottom: 2px solid #0c0c0c !important;padding-top: 3px !important;}
+.tabbrowser-tab[soundplaying="true"] {border-bottom: 2px solid #888888 !important;}
 .tab-content[selected="true"] {
 	background-color: #0c0c0c !important;
 	border-bottom: 2px solid #969696 !important;
