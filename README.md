@@ -182,5 +182,24 @@
 			</ul>
 		</p>
 	<h3>Vim</h3>
+		<p>
+			<ul>
+				<li>Enables syntax highlighting.</li>
+				<li>Changes TAB to be 2 spaces.</li>
+				<li>Enables line numbers.</li>
+				<li>Always enables commands.</li>
+				<li>Automatic indentation using the file extension.</li>
+				<li>Auto-complete enabled.</li>
+				<li>Shows matching brackets.</li>
+				<li>Folds code blocks.</li>
+				<li>Folds enabled based on indentation (useful for python).</li>
+				<li>Uses <code>vundle</code> to enable the following plugins:</li>
+					<ul>
+						<li>Nerdtree</li>
+						<li>Youcompleteme</li>
+						<li>Syntastic</li>
+					</ul>
+			</ul>
+		</p>
 	<h3>Xorg</h3>
 </div>
