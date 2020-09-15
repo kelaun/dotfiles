@@ -202,4 +202,20 @@
 			</ul>
 		</p>
 	<h3>Xorg</h3>
+		<h4>Xinitrc</h4>
+			<p>
+				<ul>
+					<li>Enables usage of <code>pywal</code>.</li>
+					<li>Merges <code>.Xresources</code>.</li>
+					<li>Executes <code>spectrwm</code>.</li>
+				</ul>
+			</p>
+		<h4>Xresources</h4>
+			<p>
+				<ul>
+					<li>Sets a colorscheme based on <code>pywal</code> output.</li>
+					<li>Uses the Iosevka Term font.</li>
+					<li>Enables copy/paste in <code>urxvt</code>.</li>
+				</ul>
+			</p>
 </div>
