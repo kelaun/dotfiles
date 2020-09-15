@@ -117,11 +117,10 @@
 		<p>
 			<ul>
 				<li>Colors are the same as in <code>.Xresources</code>.</li>
-				<li>
-					Uses Iosevka Term font.
-					<br>
-					<img src="https://raw.githubusercontent.com/kelaun/screenshots/master/firefox.png" align="center">
-				</li>
+				<li>Uses Iosevka Term font.</li>
+				<li>URL bar is accessible with <code>CTRL+l</code>.</li>
+				<br>
+				<img src="https://raw.githubusercontent.com/kelaun/screenshots/master/firefox.png" align="center">
 			</ul>
 		</p>
 	<h3>Fish</h3>
