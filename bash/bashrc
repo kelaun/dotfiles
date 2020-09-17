@@ -67,6 +67,7 @@ alias ikey='gpg --keyserver keyserver.ubuntu.com --recv'
 alias cp='/bin/cp -i'
 alias mv='/bin/mv -i'
 alias rm='/bin/rm -i'
+alias mksrcinfo='makepkg --printsrcinfo > .SRCINFO'
 
 #~~~~~~~~~~~~~~~~#
 # Configurations #
