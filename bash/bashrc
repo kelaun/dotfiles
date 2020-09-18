@@ -46,21 +46,14 @@ alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 alias ..5='cd ../../../../..'
 
-# instawow aliases
-alias wowls='instawow list'
-alias wowy='instawow update'
-alias wowu='instawow update'
-alias wows='instawow install'
-alias wowR='instawow remove'
-alias wowS='instawow search'
-
 # yay aliases
 alias update='yay -Syy'
-alias upgrade='yay -Syu; instawow update'
+alias upgrade='yay -Syu'
 alias install='yay -S'
 alias remove='yay -Rns'
 alias search='yay'
 alias clean='sudo paccache -rk1 && yay -Sc && yay -Rns $(pacman -Qtdq)'
+alias rebuild='yay -Syu $(pacman -Qm | awk '{ print $1 }')'
 
 # Utility aliases
 alias ikey='gpg --keyserver keyserver.ubuntu.com --recv'
