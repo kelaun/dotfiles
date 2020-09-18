@@ -74,6 +74,8 @@ dkms 2.8.3-1
 dmenu 4.9-2
 dmraid 1.0.0.rc16.3-12
 dnssec-anchors 20190629-2
+docbook-xml 4.5-9
+docbook-xsl 1.79.2-7
 dosfstools 4.1-3
 double-conversion 3.1.5-2
 dunst 1.5.0-1
@@ -122,6 +124,7 @@ gegl 0.4.24-2
 geoclue 2.5.6-1
 geocode-glib 3.26.2-1
 gettext 0.21-1
+ghostscript 9.53.1-1
 giblib 1.2.4-8
 giflib 5.2.1-2
 gimp 2.10.20-1
@@ -129,6 +132,7 @@ git 2.28.0-1
 glew 2.2.0-2
 glib-networking 2.66.0-1
 glib2 2.66.0-1
+glib2-docs 2.66.0-1
 glibc 2.32-4
 glibmm 2.64.2-1
 glslang 8.13.3743-1
@@ -145,6 +149,7 @@ gptfdisk 1.0.5-1
 graphene 1.10.2-1
 graphicsmagick 1.3.35-2
 graphite 1:1.3.14-1
+graphviz 2.44.1-4
 grep 3.4-1
 groff 1.22.4-3
 grub 2:2.04-8
@@ -160,6 +165,7 @@ gst-plugins-base-libs 1.18.0-1
 gst-plugins-good 1.18.0-1
 gst-plugins-ugly 1.18.0-1
 gstreamer 1.18.0-1
+gtk-doc 1.32+52+gb209222-1
 gtk-update-icon-cache 1:3.24.23-1
 gtk2 2.24.32-2
 gtk3 1:3.24.23-1
@@ -167,6 +173,7 @@ gtkmm 1:2.24.5-4
 gtkmm3 3.24.2-2
 gtksourceview3 3.24.11+28+g73e57b57-1
 gtkspell3 3.0.10-2
+gts 0.7.6.121130-2
 guile 2.2.6-2
 gunicorn 20.0.4-1
 gupnp 1.2.4-1
@@ -187,6 +194,7 @@ hwloc 2.2.0-1
 hyphen 2.8.8-3
 iana-etc 20200905-1
 icu 67.1-1
+ijs 0.35-3
 imagemagick 7.0.10.29-1
 imlib2 1.7.0-1
 inetutils 1.9.4-8
@@ -200,6 +208,8 @@ iw 5.8-1
 jack 0.125.0-9
 jansson 2.13.1-1
 jasper 2.0.19-1
+jbig2dec 0.19-1
+jq 1.6-4
 js68 68.12.0-1
 json-c 0.15-1
 json-glib 1.6.0-1
@@ -322,7 +332,7 @@ lib32-libxxf86vm 1.1.4-2
 lib32-llvm-libs 10.0.1-1
 lib32-lm_sensors 3.6.0-1
 lib32-lz4 1.9.2-1
-lib32-mesa 20.1.7-1
+lib32-mesa 20.1.8-1
 lib32-mpg123 1.26.3-1
 lib32-ncurses 6.2-1
 lib32-nettle 3.6-1
@@ -418,6 +428,7 @@ libheif 1.8.0-1
 libibus 1.5.22+8+gf591381e-1
 libice 1.0.10-3
 libid3tag 0.15.1b-11
+libidn 1.36-1
 libidn2 2.3.0-1
 libiec61883 1.2.0-6
 libimagequant 2.12.6-1
@@ -463,6 +474,7 @@ libogg 1.3.4-2
 libomxil-bellagio 0.9.3-3
 libopenraw 0.2.3-2
 libp11-kit 0.23.21-1
+libpaper 1.1.28-1
 libpcap 1.9.1-2
 libpciaccess 0.16-2
 libpdfium-nojs 4183.r0.6069b8345e-1
@@ -523,6 +535,7 @@ libwnck3 3.36.0-1
 libwpe 1.8.0-1
 libx11 1.6.12-1
 libxau 1.0.9-3
+libxaw 1.0.13-3
 libxcb 1.14-1
 libxcomposite 0.4.5-3
 libxcrypt 4.4.17-1
@@ -587,7 +600,7 @@ md4c 0.4.5-1
 mdadm 4.1-2
 megasync 4.3.3.0-2
 menu-cache 1.1.0-2
-mesa 20.1.7-1
+mesa 20.1.8-1
 mesa-demos 8.4.0-4
 metis 5.1.0.p10-1
 minizip 1:1.2.11-4
@@ -598,6 +611,7 @@ mkinitcpio-nfs-utils 0.3-7
 mkinitcpio-openswap 0.1.0-3
 mlocate 0.26.git.20170220-5
 mobile-broadband-provider-info 20190618-2
+moreutils 0.63-2
 mpfr 4.1.0-1
 mpg123 1.26.3-2
 mpv 1:0.32.0-4
@@ -611,6 +625,7 @@ ndisc6 1.0.4-2
 neon 0.31.2-1
 net-tools 1.60.20181103git-2
 netctl 1.23-1
+netpbm 10.73.32-1
 nettle 3.6-1
 networkmanager 1.26.2-1
 nitrogen 1.6.1-3
@@ -619,10 +634,11 @@ nspr 4.28-1
 nss 3.56-1
 nss-mdns 0.14.1-3
 ntfs-3g 2017.3.23-5
-numactl 2.0.13-3
+numactl 2.0.14-1
 nvidia-dkms 450.66-1
 nvidia-utils 450.66-1
 ocl-icd 2.2.12-4
+oniguruma 6.9.5_rev1-1
 openal 1.20.1-2
 opencore-amr 0.1.5-4
 opencv 4.4.0-1
@@ -658,7 +674,10 @@ pcre2 10.35-1
 pcsclite 1.9.0-1
 perl 5.32.0-1
 perl-error 0.17029-2
+perl-io-tty 1.12-10
+perl-ipc-run 20180523.0-2
 perl-mailtools 2.21-4
+perl-time-duration 1:1.20-4
 perl-timedate 2.33-2
 pinentry 1.1.0-5
 pixman 0.40.0-1
@@ -680,6 +699,7 @@ pygobject-devel 3.36.1-1
 python 3.8.5-2
 python-aiohttp 3.6.2-2
 python-alembic 1.4.2-1
+python-anytree 2.8.0-1
 python-apipkg 1.5-3
 python-appdirs 1.4.4-1
 python-aresponses 2.0.0-2
@@ -706,6 +726,7 @@ python-iniconfig 1.0.1-1
 python-jellyfish 0.8.2-1
 python-jinja 2.11.2-1
 python-loguru 0.5.2-1
+python-lxml 4.5.2-1
 python-mako 1.1.3-1
 python-markupsafe 1.1.1-4
 python-more-itertools 8.5.0-1
@@ -722,7 +743,7 @@ python-prompt_toolkit 3.0.7-2
 python-py 1.9.0-1
 python-pydantic 1.6.1-1
 python-pyelftools 0.26-1
-python-pygments 2.7.0-1
+python-pygments 2.7.1-1
 python-pyinotify 0.9.6-7
 python-pyparsing 2.4.7-1
 python-pytest 6.0.2-1
@@ -746,6 +767,7 @@ python-xlib 0.27-1
 python-yaml 5.3.1-2
 python-yarl 1.5.1-1
 python-zipp 3.1.0-1
+python2 2.7.18-2
 qemu 5.1.0-1
 qt5-base 5.15.1-1
 qt5-declarative 5.15.1-1
@@ -773,7 +795,7 @@ ruby-httpclient 2.8.3-6
 ruby-irb 1.2.4-1
 ruby-multi_json 1.15.0-1
 ruby-puppet-resource_api 1.8.13-1
-ruby-reline 0.1.4-1
+ruby-reline 0.1.5-1
 ruby-semantic_puppet 1.0.2-3
 ruby-shadow 2.5.0-5
 ruby-sync 0.5.0-3
@@ -805,7 +827,7 @@ speex 1.2.0-3
 speexdsp 1.2.0-2
 spice 0.14.3-2
 spicetify-cli 1.1.0-1
-spicetify-themes-git r424.17d0670-1
+spicetify-themes-git r441.55e6d35-1
 spirv-tools 2020.4-1
 spotify 1:1.1.10.546-4
 sqlite 3.33.0-2
