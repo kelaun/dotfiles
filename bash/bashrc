@@ -61,7 +61,7 @@ alias install='yay -S'
 alias remove='yay -Rns'
 alias search='yay'
 alias clean='sudo paccache -rk1 && yay -Sc && yay -Rns $(pacman -Qtdq)'
-alias rebuild='yay -Syu $(pacman -Qm | awk '{ print $1 }')'
+alias rebuild="yay -Syu $(pacman -Qm | awk '{ print $1 }')"
 
 # Utility aliases
 alias ikey='gpg --keyserver keyserver.ubuntu.com --recv'
