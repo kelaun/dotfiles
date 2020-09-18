@@ -1,30 +1,30 @@
  :root {
 
    /* Minimal Functional Fox variables*/
-  --mff-bg: #111111;
-  --mff-icon-color: #b3baba;
+  --mff-bg: #0c0c0c;
+  --mff-icon-color: #ebebeb;
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
-  --mff-sidebar-color: #b3baba;
+  --mff-sidebar-color: #ebebeb;
   --mff-tab-border-radius: 0px;
-  --mff-tab-color: #b3baba;
+  --mff-tab-color: #ebebeb;
   --mff-tab-font-family: "Iosevka Term";
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
-  --mff-tab-pinned-bg: #4c4f4f;
-  --mff-tab-selected-bg: #3d6446;
-  --mff-tab-soundplaying-bg: #616561;
-  --mff-urlbar-color: #b3baba;
-  --mff-urlbar-focused-color: #b3baba;
+  --mff-tab-pinned-bg: #666666;
+  --mff-tab-selected-bg: #969696;
+  --mff-tab-soundplaying-bg: #888888;
+  --mff-urlbar-color: #ebebeb;
+  --mff-urlbar-focused-color: #ebebeb;
   --mff-urlbar-font-family: "Iosevka Term";
   --mff-urlbar-font-size: 11pt;
   --mff-urlbar-font-weight: 700;
-  --mff-urlbar-results-color: #b3baba;
+  --mff-urlbar-results-color: #ebebeb;
   --mff-urlbar-results-font-family: "Iosevka Term";
   --mff-urlbar-results-font-size: 11pt;
   --mff-urlbar-results-font-weight: 700;
-  --mff-urlbar-results-url-color: #3d6446;
+  --mff-urlbar-results-url-color: #666666;
   /*   --mff-tab-selected-bg: linear-gradient(90deg, rgba(232,74,95,1) 0%, rgba(255,132,124,1) 50%, rgba(254,206,168,1) 100%); */
   /*   --mff-urlbar-font-weight: 600; */
 
@@ -132,10 +132,6 @@ width: 50% !important;
   margin-top: 4px !important;
   max-height: var(--mff-tab-height) !important;
   min-height: var(--mff-tab-height) !important;
-}
-
-.tabbrowser-tab[soundplaying="true"] {
-  background-color: var(--mff-tab-soundplaying-bg) !important;
 }
 
 #tabs-newtab-button {
@@ -349,3 +345,63 @@ image#sidebar-icon {
 toolbarseparator {
   display: none;
 }
+
+@namespace url("https://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+#navigator-toolbox:not(:focus-within):not(:hover) {
+	margin-top: -38px;
+}
+#navigator-toolbox:hover:not(:focus-within) {
+	margin-top: -38px;
+}
+#navigator-toolbox {
+	transition: 0.2s margin-top ease-out;
+}
+
+@namespace url("https://www.mozila.org/keymaster/gatekeeper/there.is.only.xul");
+.tab-line {display : none !important;}
+.tab-content {border-bottom: 2px solid #0c0c0c !important;padding-top: 3px !important;}
+.tabbrowser-tab[soundplaying="true"] {border-bottom: 2px solid #888888 !important;}
+.tab-content[selected="true"] {
+	background-color: #0c0c0c !important;
+	border-bottom: 2px solid #969696 !important;
+	color: #ebebeb !important;
+}
+.tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]){max-width: 180px !important;}
+tab {
+	padding-right: 1px !important;
+	padding-left: 1px !important;
+	padding-bottom: 0px !important;
+	background-color: #0c0c0c !important;
+	color: #ebebeb !important;
+}
+scrollbox[orient="horizontal"]{ -moz-box-pack: center; }
+.tabbrowser-tab::before, .tabbrowser-tab::after {display:none !important;}
+#tabbrowser-tabs {
+	background-color: #0c0c0c !important;
+	margin-left: 0px !important;
+	/*height: 25px !important;*/
+	margin-bottom: 0px !important;
+	text-align: center !important;
+}
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]):not([multiselected]){ background-color: transparent !important; }
+.tabbrowser-tab { opacity: 0.5 }
+.tabbrowser-tab:hover { opacity: 0.75 }
+.tabbrowser-tab[selected] { opacity: 1 }
+.tab-throbber-tabslist, .tab-throbber, .tab-icon-pending, .tab-icon-image, .tab-sharing-icon-overlay, .tab-icon-sound, .tab-close-button { display: none !important; }
+.tabbrowser-tab[selected] .tab-icon-image {
+	filter: grayscale(100%) opacity (90%) !important;
+}
+.tab-text[selected] {
+	text-align: center !important;
+	font-weight: bold !important;
+	-moz-box-flex: 1 !important;
+}
+.tab-text {
+	text-align: center !important;
+	-moz-box-flex: 1 !important;
+}
+#TabsToolbar .close-icon {
+	display: none !important;
+}
+:root{--newtab-textbox-background-color:#0c0c0c;}
+#alltabs-button {display: none !important; }
