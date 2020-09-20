@@ -1,0 +1,34 @@
+[global_config]
+  focus = mouse
+  handle_size = 20
+  tab_position = hidden
+  title_hide_sizetext = True
+  title_transmit_fg_color = "#ebebeb"
+  title_transmit_bg_color = "#0c0c0c"
+  title_receive_fg_color = "#0c0c0c"
+  title_receive_bg_color = "#cfcfcf"
+  title_inactive_fg_color = "#ebebeb"
+  title_inactive_bg_color = "#666666"
+  title_use_system_font = False
+  title_font = Iosevka Term 11
+[keybindings]
+[profiles]
+  [[default]]
+    icon_bell = False
+    cursor_shape = ibeam
+    cursor_color = "#ebebeb"
+    font = Iosevka Term 11
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    use_system_font = False
+    use_theme_colors = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
