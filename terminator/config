@@ -10,7 +10,7 @@
   title_inactive_fg_color = "#ebebeb"
   title_inactive_bg_color = "#666666"
   title_use_system_font = False
-  title_font = Iosevka Term 11
+  title_font = Iosevka Term 24
 [keybindings]
 [profiles]
   [[default]]
