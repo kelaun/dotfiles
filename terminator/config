@@ -17,7 +17,7 @@
     icon_bell = False
     cursor_shape = ibeam
     cursor_color = "#ebebeb"
-    font = Iosevka Term 11
+    font = Iosevka Term 24
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
