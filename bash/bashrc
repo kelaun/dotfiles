@@ -91,3 +91,6 @@ shopt -s autocd
 
 # Spellcheck for directory names
 shopt -s cdspell
+
+# Autostart
+kfetch
