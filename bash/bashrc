@@ -47,7 +47,7 @@ alias ..4='cd ../../../..'
 alias ..5='cd ../../../../..'
 
 # yay aliases
-alias update='yay -Syy'
+alias update='yay -Syyu'
 alias upgrade='yay -Syu'
 alias install='yay -S'
 alias remove='yay -Rns'
