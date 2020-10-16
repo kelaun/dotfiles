@@ -55,7 +55,7 @@ alias wowR='instawow remove'
 alias wowS='instawow search'
 
 # yay aliases
-alias update='yay -Syy'
+alias update='yay -Syyu; instawow update'
 alias upgrade='yay -Syu; instawow update'
 alias install='yay -S'
 alias remove='yay -Rns'
